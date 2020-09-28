@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.calc{
+  width:270px;
+  height:315px;
+  border:2px solid black;
+  background-color:#003366;
+  margin:100px auto;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+
+.display{
+  width:255px;
+   height:50px;
+  border-radius:5px;
+  font-size:20px;
+  margin-top:5px;
+  overflow:scroll; /*utilizzare il puntatore del mouse per scorrere*/
+
+}
+
+.table{
+  width:100%;
+  height:250px
+}
+
+td input {
+  width:100%;
+  height:100%;
+  font-size:30px;
+
+}

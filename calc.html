@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link  rel="stylesheet" type="text/css" href="clac1.css"/>
+  <script  src="script.js" defer></script>
+  </head>
+<body>
+
+<div class="calc">
+<form >
+<!--input di sola lettura-->
+<input  class="display" type="text" id="area" value="" readonly="readonly"/>
+
+<table class="table">
+  <tr>
+    <td><input type="button" value="." id="." onclick="dig(this.id)"></td>
+    <td><input type="button" value="(" id="("onclick="dig(this.id)"/></td>
+    <td><input type="button" value=")"  id=")"onclick="dig(this.id)"/></td>
+    <td><input type="button" value="sqrt" onclick="sqrt()"/></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="0" onclick="dig(0)" id="puls"></td>
+    <td> <input type="button" value="1" onclick="dig(1)" />  </td>
+    <td> <input type="button" value="2"onclick="dig(2)"  /> </td>
+
+    <td> <input type= "button" value ="3" onclick="dig(3)" /> </td>
+
+ </tr>
+
+
+  <tr>
+    <td> <input type ="button" value="4"  onclick="dig(4)" /></td>
+
+    <td> <input type ="button" value= "5"   onclick="dig(5)" /> </td>
+
+    <td> <input type ="button" value="6"  onclick="dig(6)" /></td>
+    <td> <input type ="button" value="7" onclick="dig(7)"  /></td>
+  </tr>
+
+
+  <tr>
+    <td> <input type ="button" value="8"   onclick="dig(8)" /></td>
+
+    <td> <input type ="button" value="9" onclick="dig(9)" /></td>
+
+    <td> <input type ="button" value="+"  id="+" onclick="dig(this.id)"  /></td>
+
+    <td> <input type ="button" value="-" id="-" onclick="dig(this.id)"  /></td>
+
+  </tr>
+
+  <tr>
+    <td colspan=2> <input type ="button" value="=" id="="  onclick="uguale(this.id)" /></td>
+    <td> <input type ="button" value="*" id="*"  onclick="dig(this.id)" /></td>
+ <td > <input type ="button" value="/" id="/" onclick="dig(this.id)"  /></td>
+  </tr>
+  <tr>
+    <td><input type="button" value='C' onclick='azzera()'/></td>
+    <td><input type="button" value="CA" onclick='elimina()'/>
+    </td>
+
+    <td><input type="button" value="PI" onclick='PI()'/>
+    </td>
+    <td><input type="button" value="ln(x)" onclick='ln()'/>
+    </td>
+  </tr>
+
+</table>
+</form>
+</div>
+
+</body>
+
+</html>
